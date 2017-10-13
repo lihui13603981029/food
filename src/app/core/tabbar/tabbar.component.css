@@ -1,0 +1,11 @@
+.tabbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    width: 375px;
+    height: 40px;
+   background-color: wheat;
+}

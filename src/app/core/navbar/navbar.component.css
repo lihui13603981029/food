@@ -1,0 +1,8 @@
+.navbar {
+    display: block;
+    background-color: wheat;
+    text-align: center;
+    float: left;
+    width: 100%;
+    height: 44px;
+}
