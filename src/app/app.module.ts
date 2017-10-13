@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test.component';
 import { TabbarComponent } from './core/tabbar/tabbar.component';
-
+import { NavbarComponent } from './core/navbar/navbar.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -20,7 +20,8 @@ import { MineModule } from './modules/mine/mine.module';
   declarations: [
     AppComponent,
     TestComponent,
-    TabbarComponent
+    TabbarComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

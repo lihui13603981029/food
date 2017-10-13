@@ -2,8 +2,7 @@ import { Component }  from '@angular/core';
 
 
 @Component({
-    selector:'app-mine',
-    templateUrl:'',
+    template:`<router-outlet></router-outlet>`,
     styleUrls:[]
 })
 
