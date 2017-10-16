@@ -7,6 +7,7 @@ const mineRoutes:Routes =[
         {
             path:'mine',
             component:MineComponent,
+            data:{title:"我的"},
             children:[
                 {
                     path:'',

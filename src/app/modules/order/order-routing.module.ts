@@ -7,6 +7,7 @@ const orderRoutes: Routes = [
     {
         path:'order',
         component:OrderComponent,
+        data:{title:"订单"},
         children:[
             {
                 path:'orderList',

@@ -3,6 +3,7 @@ import { RouterModule, Routes }  from '@angular/router';
 import { TestComponent } from './test.component';
 
 
+
 const routes :Routes = [{
         path:'',
         redirectTo:'/home',

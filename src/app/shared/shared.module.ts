@@ -4,9 +4,11 @@ import { ErrorComponent } from './error/error.component';
 @NgModule({
     imports:[],
     declarations:[ErrorComponent],
-    exports:[]
+    exports:[
+        ErrorComponent
+    ]
 })
-export class ShareModule {
+export class SharedModule {
 
 
 }

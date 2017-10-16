@@ -4,10 +4,12 @@ import { HomeComponent } from './home.component';
 import { HomeMenuComponent } from './home-menu/home-menu.component';
 import { HomeDetailComponent } from './home-detail/home-detail.component';
 
+
 const homeRoutes:Routes =[
             {
                 path:'home',
                 component:HomeComponent,
+                data:{title:"首页"},
                 children:[
                     {
                         path:'homeMenu',
