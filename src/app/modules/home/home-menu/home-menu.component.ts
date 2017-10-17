@@ -3,8 +3,8 @@ import { Component }  from '@angular/core';
 
 @Component({
     selector:'home-menu',
-    template:`home-menu`,
-    styleUrls:[]
+    templateUrl:'./home-menu.component.html',
+    styleUrls:['./home-menu.component.css']
 })
 
 export class HomeMenuComponent {

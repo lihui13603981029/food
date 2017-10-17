@@ -19,7 +19,7 @@ const homeRoutes:Routes =[
                         component:HomeDetailComponent
                     },{
                         path:'',
-                        component:HomeDetailComponent
+                        component:HomeMenuComponent
                         
                     }
                 ]
