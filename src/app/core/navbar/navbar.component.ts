@@ -22,8 +22,7 @@ export class NavbarComponent implements OnInit {
             
             //对event 的状态进行判断
             if (event instanceof NavigationEnd) {
-            
-              this.title = this.getTitle(router.routerState, router.routerState.root).join();
+              this.title = this.getTitle(router.routerState, router.routerState.root)[0];
               titleService.setTitle(this.title);
             }
           });
@@ -31,14 +30,14 @@ export class NavbarComponent implements OnInit {
     getTitle(state, parent) {
         console.log(parent);
         var data = [];
-        // if (parent && parent.snapshot.data && parent.snapshot.data.title) {
-        //   data.push(parent.snapshot.data.title);
+        if (parent && parent.snapshot.data && parent.snapshot.data.title) {
+          data.push(parent.snapshot.data.title);
          
-        // }
+        }
     
         if (state && parent) {
-            console.log('路由');
-        //   data.push(...this.getTitle(state, state.firstChild(parent)));
+
+          data.push(...this.getTitle(state, state.firstChild(parent)));
         }
     
         return data;

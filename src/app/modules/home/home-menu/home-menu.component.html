@@ -1,9 +1,16 @@
 <div class="home-menu">
     <app-playview ></app-playview>
-    <div class="food-type">
-        <div class="type-lable" *ngFor = "let type of types"><img src="" alt=""><p></p></div>
-    </div>
-    <div class="food-list">
 
+    <div class="food-type">
+        <div class="type-lable" *ngFor = "let type of types"><p>{{type}}</p></div>
+    </div>
+    <div class="food-list" *ngFor= "let food of foodLists">
+        <div class="picImage">
+            <img src="{{food.imageUrl}}" alt="">
+        </div>
+        <div class="rightDiv">
+            <p>{{food.title}}</p>
+            <span>{{food.introduce}}</span>
+        </div>
     </div>
 </div>

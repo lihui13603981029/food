@@ -1,0 +1,46 @@
+.food-type {
+    width: 373px;
+    height: 120px; 
+    border-bottom: 5px solid wheat;
+}
+.food-type .type-lable {
+    float: left;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 25px;
+    text-align: center;
+    border-radius: 60px;
+    font-size: 16px;
+    background-color: rebeccapurple;
+}
+.food-list {
+    width: 375px;
+    height: 90px;
+    border-bottom: 1px solid wheat;
+}
+.picImage {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    float: left
+}
+.rightDiv {
+    float: left;
+    width: 285px;
+    height: 90px;
+}
+.picImage img {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+}
+.food-list .rightDiv p {
+    display: block;
+}
+.food-list .rightDiv span {
+    font-size: 14px;
+    
+}
