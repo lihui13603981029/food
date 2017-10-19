@@ -1,4 +1,5 @@
 import { Component }  from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -8,6 +9,13 @@ import { Component }  from '@angular/core';
 })
 
 export class HomeMenuComponent {
+
+    age:string = "";
+    constructor(
+        private router: Router
+    ){}
+    
+    
     public types = ["川菜","粤菜","鲁菜","浙菜","闽菜","湘菜","徽菜","潮州菜"];
     public foodLists = [{
                         title:"满汉全席",
@@ -17,6 +25,27 @@ export class HomeMenuComponent {
                         title:"叫花鸡",
                         imageUrl:"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3651588332,349784617&fm=27&gp=0.jpg",
                         introduce:"常熟叫花鸡，又称煨鸡 ，是江苏省传统的地方名菜，属于苏菜系。"
-                    }]
+                    },{
+                        title:"叫花鸡",
+                        imageUrl:"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3651588332,349784617&fm=27&gp=0.jpg",
+                        introduce:"常熟叫花鸡，又称煨鸡 ，是江苏省传统的地方名菜，属于苏菜系。"
+                    },{
+                        title:"叫花鸡",
+                        imageUrl:"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3651588332,349784617&fm=27&gp=0.jpg",
+                        introduce:"常熟叫花鸡，又称煨鸡 ，是江苏省传统的地方名菜，属于苏菜系。"
+                    },{
+                        title:"叫花鸡",
+                        imageUrl:"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3651588332,349784617&fm=27&gp=0.jpg",
+                        introduce:"常熟叫花鸡，又称煨鸡 ，是江苏省传统的地方名菜，属于苏菜系。"
+                    }];
+    
+    
+   navigateType(): void {
+       this.router.navigate(['/home/homeList']);
+       
+    }
+    goHomeDetail(item:any): void {
+       this.router.navigate(["/home/homeDetail"]);
+    }
 
 }

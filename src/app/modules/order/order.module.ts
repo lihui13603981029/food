@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { OrderRoutingModule } from './order-routing.module';
+import { SharedModule } from './../../shared/shared.module';
+
 import { OrderComponent } from './order.component';
 import { OrderListComponent } from './order-list/order-list.component';
-import { SharedModule } from './../../shared/shared.module';
+import { OrderCellComponent } from './order-cell/order-cell.component';
 
 @NgModule({
     imports:[
@@ -11,7 +13,8 @@ import { SharedModule } from './../../shared/shared.module';
     ],
     declarations:[
         OrderListComponent,
-        OrderComponent
+        OrderComponent,
+        OrderCellComponent
     ]
 })
 

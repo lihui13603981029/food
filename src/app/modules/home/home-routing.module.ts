@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { HomeMenuComponent } from './home-menu/home-menu.component';
 import { HomeDetailComponent } from './home-detail/home-detail.component';
-
+import { HomeListComponent } from './home-list/home-list.component';
 
 const homeRoutes:Routes =[
             {
@@ -11,16 +11,15 @@ const homeRoutes:Routes =[
                 component:HomeComponent,
                 data:{title:"首页"},
                 children:[
-                    {
-                        path:'homeMenu',
-                        component:HomeMenuComponent
-                    },{
+                   {
                         path:'homeDetail',
                         component:HomeDetailComponent
                     },{
+                        path:'homeList',
+                        component:HomeListComponent
+                    },{
                         path:'',
-                        component:HomeMenuComponent
-                        
+                        component:HomeMenuComponent   
                     }
                 ]
             }

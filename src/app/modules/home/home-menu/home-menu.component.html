@@ -1,16 +1,18 @@
 <div class="home-menu">
     <app-playview ></app-playview>
-
-    <div class="food-type">
-        <div class="type-lable" *ngFor = "let type of types"><p>{{type}}</p></div>
+    <div class="food-type" >
+        <div class="type-lable" *ngFor = "let type of types" (click) = "navigateType(type)"><p>{{type}}</p></div>
     </div>
-    <div class="food-list" *ngFor= "let food of foodLists">
-        <div class="picImage">
-            <img src="{{food.imageUrl}}" alt="">
-        </div>
-        <div class="rightDiv">
-            <p>{{food.title}}</p>
-            <span>{{food.introduce}}</span>
+    <div class="foodCell">
+        <div class="food-list" *ngFor= "let food of foodLists" (click) = "goHomeDetail(food)">
+            <div class="picImage">
+                <img src="{{food.imageUrl}}" alt="">
+            </div>
+            <div class="rightDiv">
+                <p>{{food.title}}</p>
+                <span>{{food.introduce}}</span>
+            </div>
         </div>
     </div>
 </div>
+<app-tabbar></app-tabbar>

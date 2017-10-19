@@ -3,9 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent }    from './home.component';
 
-
 import { HomeMenuComponent } from './home-menu/home-menu.component';
 import { HomeDetailComponent } from './home-detail/home-detail.component';
+import { HomeListComponent } from './home-list/home-list.component';
 
 import { SharedModule } from './../../shared/shared.module';
  
@@ -18,7 +18,8 @@ import { SharedModule } from './../../shared/shared.module';
     declarations:[
         HomeComponent,
         HomeMenuComponent,
-        HomeDetailComponent
+        HomeDetailComponent,
+        HomeListComponent
     ]
 })
 
