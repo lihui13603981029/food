@@ -1,3 +1,19 @@
-<div>
-    home-detail
+<div class="deltail-view">
+    <div class="title">
+        {{dish.title}}
+    </div>
+    <div class="border-img">
+        <img [src]="dish.img" [alt]="tupian">
+    </div>
+    <p class="content-text">{{dish.describution}}</p>
+    
 </div>
+<div class="tabbar-tool">
+    <a href="javascript:;" style="background-color:#B5ECD2;" (click) = "save()">
+        收&nbsp;&nbsp;藏
+    </a> 
+    <a href="javascript:;" style="background-color:darksalmon;" (click)="buy()">
+        立即下单
+    </a>
+</div>
+

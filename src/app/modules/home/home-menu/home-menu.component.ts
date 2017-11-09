@@ -1,5 +1,6 @@
-import { Component }  from '@angular/core';
-import { Router } from '@angular/router';
+import { Component,OnInit}  from '@angular/core';
+import { Router,ActivatedRoute } from '@angular/router';
+import { HomeService } from './../service/home.service';
 
 
 @Component({
@@ -8,13 +9,17 @@ import { Router } from '@angular/router';
     styleUrls:['./home-menu.component.css']
 })
 
-export class HomeMenuComponent {
+export class HomeMenuComponent  implements OnInit{
 
     age:string = "";
     constructor(
-        private router: Router
+        private router: Router,
+        private route:ActivatedRoute,
+        private homeService:HomeService
     ){}
-    
+    ngOnInit() {
+        this.homeService.getDishTypes().then(data => console.log(data));
+    }
     
     public types = ["川菜","粤菜","鲁菜","浙菜","闽菜","湘菜","徽菜","潮州菜"];
     public foodLists = [{
@@ -39,13 +44,15 @@ export class HomeMenuComponent {
                         introduce:"常熟叫花鸡，又称煨鸡 ，是江苏省传统的地方名菜，属于苏菜系。"
                     }];
     
-    
+    //采用的是相对导航  ./   {relativeTo:this.route}
+    //routingLink 不需要 {relativeTo:this.route}
    navigateType(): void {
-       this.router.navigate(['/home/homeList']);
+       
+       this.router.navigate(['./homeList'],{relativeTo:this.route});
        
     }
     goHomeDetail(item:any): void {
-       this.router.navigate(["/home/homeDetail"]);
+       this.router.navigate(["./homeDetail"],{relativeTo:this.route});
     }
 
 }

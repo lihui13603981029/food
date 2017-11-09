@@ -1,0 +1,7 @@
+.order-list {
+    position: absolute;
+    top: 1rem;
+    bottom: 1rem;
+    width: 7.5rem;
+    overflow: scroll;
+}

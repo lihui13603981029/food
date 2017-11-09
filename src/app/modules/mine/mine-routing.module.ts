@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MineComponent } from './mine.component';
 import { MineMenuComponent } from './mine-menu/mine-menu.component';
-
+import { LoginComponent } from './login/login.component';
 const mineRoutes:Routes =[
         {
             path:'mine',
@@ -12,6 +12,9 @@ const mineRoutes:Routes =[
                 {
                     path:'',
                     component:MineMenuComponent
+                },{
+                    path:'login',
+                    component:LoginComponent
                 }
             ]
         }

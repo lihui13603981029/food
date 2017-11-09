@@ -1,0 +1,37 @@
+.mine {
+    position: absolute;
+    top: 1rem;
+    bottom: 1rem;
+    
+    width: 7.5rem;
+    font-size: 0.32rem;
+}
+
+.mine .mine-bg {
+    position: relative;
+    top: 0;
+    width: 7.5rem;
+    height: 4rem;
+    text-align: center;
+    background-image: url('../../../../assets/img/mine-bg.png');
+    background-size: 7.5rem;
+    background-repeat: no-repeat;
+}
+.mine .mine-bg img {
+    position: relative;
+    top: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+}
+
+.mine a {
+    position: relative;
+    top: 0.5rem;
+    display: block;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    border-bottom: 1px solid #DDDADA;
+    text-decoration: none;
+    color: grey;
+}

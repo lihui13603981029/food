@@ -7,7 +7,7 @@ import { HomeListComponent } from './home-list/home-list.component';
 
 const homeRoutes:Routes =[
             {
-                path:'home',
+                path:'',
                 component:HomeComponent,
                 data:{title:"首页"},
                 children:[

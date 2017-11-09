@@ -1,56 +1,68 @@
 .home-menu {
-    width: 100%;
-    height: 579px;
-    overflow: hidden;
+    width: 7.5rem;
+    font-size: 0.32rem;
+    position: absolute;
+    bottom: 1rem;
+    top: 1rem;
 }
 .food-type {
-    width: 373px;
-    height: 120px; 
-    border-bottom: 5px solid wheat;
+    position: relative;
+    width: 7.5rem;
+    height: 2.4rem;
+    background-color: #EAE5EC;
+    border-bottom: 5px solid #B48939;
+
+    
 }
 .food-type .type-lable {
     float: left;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    margin-left: 25px;
+    width: 1.2rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    margin-left: 0.5rem;
     text-align: center;
-    border-radius: 60px;
-    font-size: 16px;
+    border-radius: 1.2rem;
+    font-size: 0.32rem;
     background-color: rebeccapurple;
 }
 .foodCell {
-    width: 375px;
-    height: 254px;
+    position: relative;
+    width: 7.5rem;
+    height: 5.3rem;
     overflow: scroll;
 }
+.foodCell::-webkit-scrollbar {
+    display: none;
+}
 .food-list {
-    width: 375px;
-    height: 90px;
+    width: 7.5rem;
+    height: 1.8rem;
     border-bottom: 1px solid wheat;
 }
 .picImage {
-    width: 90px;
-    height: 90px;
+    width: 1.8rem;
+    height: 1.8rem;
     position: relative;
-    float: left
+    float: left;
+    line-height: 1.8rem;
+    
 }
 .rightDiv {
     float: left;
-    width: 285px;
-    height: 90px;
+    width: 5.5rem;
+    height: 1.8rem;
 }
 .picImage img {
     position: relative;
-    top: 10px;
-    left: 10px;
-    width: 70px;
-    height: 70px;
+    vertical-align: middle;
+    width:1.5rem;
+    height: 1.5rem;
+   
 }
 .food-list .rightDiv p {
     display: block;
 }
 .food-list .rightDiv span {
-    font-size: 14px;
+    font-size: 0.3rem;
     
 }

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { RouterModule}  from '@angular/router';
 
 import { ErrorComponent } from './error/error.component';
@@ -9,7 +9,7 @@ import { PlayviewComponent } from './playview/playview.component';
 @NgModule({
     imports:[
         RouterModule,
-        BrowserModule
+        CommonModule
     ],
     declarations:[
         ErrorComponent,

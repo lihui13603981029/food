@@ -34,7 +34,6 @@ export class NavbarComponent implements OnInit {
           data.push(parent.snapshot.data.title);
          
         }
-    
         if (state && parent) {
 
           data.push(...this.getTitle(state, state.firstChild(parent)));

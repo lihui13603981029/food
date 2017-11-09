@@ -1,5 +1,6 @@
-import { Component }  from '@angular/core';
-
+import { Component,Input ,OnInit}  from '@angular/core';
+import { DishType} from './../service/home.service';
+import { Router,ActivatedRoute } from '@angular/router';
 
 @Component({
     selector:'home-cell',
@@ -7,7 +8,12 @@ import { Component }  from '@angular/core';
     styleUrls:['./home-cell.component.css']
 })
 
-export class AppComponent {
+export class HomeCellComponent implements OnInit {
+@Input()  dishType:DishType;
+    constructor(){}
+    ngOnInit () {
+        
+    }
 
 
 }

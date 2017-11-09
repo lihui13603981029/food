@@ -1,0 +1,25 @@
+.food-list {
+    width: 7.5rem;
+    height: 1.8rem;
+    border-bottom: 1px solid wheat;
+}
+.picImage {
+    width: 1.8rem;
+    height: 1.8rem;
+    position: relative;
+    float: left;
+    line-height: 1.8rem;
+    
+}
+.rightDiv {
+    float: left;
+    width: 5.5rem;
+    height: 1.8rem;
+}
+.picImage img {
+    position: relative;
+    vertical-align: middle;
+    width:1.5rem;
+    height: 1.5rem;
+   
+}

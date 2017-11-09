@@ -4,6 +4,7 @@ import { SharedModule } from './../../shared/shared.module';
 
 import { MineComponent } from './mine.component';
 import { MineMenuComponent } from './mine-menu/mine-menu.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { MineMenuComponent } from './mine-menu/mine-menu.component';
     ],
     declarations:[
         MineComponent,
-        MineMenuComponent
+        MineMenuComponent,
+        LoginComponent
     ]
 })
 
